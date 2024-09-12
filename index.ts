@@ -17,6 +17,5 @@ app.use(express.urlencoded({ extended: false }))
 app.use('/', router)
 
 app.listen(port, () => {
-  console.log(`FINDING ENV FILE: ${process.env.PORT}`);
   console.log(`Server is running at http://localhost:${port}`);
 });

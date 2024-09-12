@@ -15,7 +15,7 @@ pnpm dev
 
 ```bash
 docker network create bucks-cafe-network
-docker run -d --name my_backend_dock --network bucks-cafe-network -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 mysql:latest
+docker run -d --name my_backend_dock --network bucks-cafe-network -e MYSQL_ROOT_PASSWORD=root -p 3307:3306 mysql:latest
 ```
 
 #### Seed the database
