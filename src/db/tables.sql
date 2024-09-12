@@ -1,4 +1,5 @@
 -- SET DATABASE
+CREATE DATABASE IF NOT EXISTS bucks_cafe;
 USE bucks_cafe;
 
 -- Clear database
@@ -11,7 +12,7 @@ CREATE TABLE Cafes (
   id VARCHAR(40) PRIMARY KEY,
   name VARCHAR(100) NOT NULL,
   location VARCHAR(255) NOT NULL,
-  description VARCHAR(256) NOT NULL
+  description VARCHAR(1000) NOT NULL
 );
 
 CREATE TABLE Employees (

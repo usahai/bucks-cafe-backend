@@ -1,12 +1,13 @@
 {
   "watch": [
-    "src"
+    "src",
+    ".env"
   ],
   "ext": "ts,json",
   "ignore": [
     "src/**/*.spec.ts"
   ],
-  "exec": "ts-node ./index.ts",
+  "exec": "ts-node -r dotenv/config ./index.ts",
   "events": {
     "start": "clear"
   }
