@@ -1,4 +1,4 @@
-import { AllCafesResponse } from "../models/cafe";
+import { AllCafesResponse } from "@/models/cafe";
 
 export function processCafesData(data: AllCafesResponse[]) {
   const mapOfCafes: Map<string, Object> = new Map()

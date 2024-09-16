@@ -1,10 +1,10 @@
 import type { NextFunction, Request, Response } from 'express'
-import { AddCafe, AllCafesRequest, DeleteCafe, UpdateCafe } from '../models/cafe'
-import { fetchAllCafes, fetchCafesById, fetchCafesByLocation } from "../api/cafes"
-import { processCafesData } from "../views/cafes.views"
-import { conn, promiseConn } from '../configs/db'
-import { generateRandomId } from '../utils/random'
-import { conditionals } from '../utils/query'
+import { AddCafe, AllCafesRequest, DeleteCafe, UpdateCafe } from '@/models/cafe'
+import { fetchAllCafes, fetchCafesById, fetchCafesByLocation } from "@/api/cafes"
+import { processCafesData } from "@/views/cafes.views"
+import { conn, promiseConn } from '@/configs/db'
+import { generateRandomId } from '@/utils/random'
+import { conditionals } from '@/utils/query'
 
 export const getAllCafes = async (req: Request<any, any, any, AllCafesRequest>, res: Response) => {
   const { id, location } = req.query
