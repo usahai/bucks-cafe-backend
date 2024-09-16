@@ -1,7 +1,7 @@
 import type { Request, Response } from 'express'
-import { AllEmployees } from '@/models/employee'
-import { GET_ALL_EMPLOYEES, GET_ALL_EMPLOYEES_BY_CAFE, GET_EMPLOYEE_BY_ID } from '@/constants/queries'
-import { conn } from '@/configs/db'
+import { AllEmployees } from '../models/employee'
+import { GET_ALL_EMPLOYEES, GET_ALL_EMPLOYEES_BY_CAFE, GET_EMPLOYEE_BY_ID } from '../constants/queries'
+import { conn } from '../configs/db'
 
 export const getAllEmployees = async (req: Request<any, any, any, AllEmployees>, res: Response) => {
   try {

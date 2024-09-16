@@ -1,4 +1,4 @@
-import { ValuesOf } from "@/utils/values-of"
+import { ValuesOf } from "../utils/values-of"
 
 export const RANDOM_TYPE = {
   UUID: 'uuid',

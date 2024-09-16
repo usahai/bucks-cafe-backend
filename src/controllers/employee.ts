@@ -1,12 +1,12 @@
 import type { Request, Response } from 'express'
-import { conn, promiseConn } from '@/configs/db'
-import { generateRandomId } from '@/utils/random'
-import { RANDOM_TYPE } from '@/constants/random'
-import { getTodaysDate } from '@/utils/date'
-import { RESPONSE_MESSAGES } from '@/constants/messages'
-import { AddEmployee, DeleteEmployee, UpdateEmployee } from '@/models/employee'
-import { conditionals } from '@/utils/query'
-import { DELETE_FROM_CAFE_EMPLOYEES } from '@/constants/queries'
+import { conn, promiseConn } from '../configs/db'
+import { generateRandomId } from '../utils/random'
+import { RANDOM_TYPE } from '../constants/random'
+import { getTodaysDate } from '../utils/date'
+import { RESPONSE_MESSAGES } from '../constants/messages'
+import { AddEmployee, DeleteEmployee, UpdateEmployee } from '../models/employee'
+import { conditionals } from '../utils/query'
+import { DELETE_FROM_CAFE_EMPLOYEES } from '../constants/queries'
 
 export async function addNewEmployee(req: Request<unknown, unknown, AddEmployee>, res: Response) {
   try {

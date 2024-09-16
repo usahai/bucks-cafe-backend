@@ -1,5 +1,5 @@
 import express from 'express'
-import { addNewCafe, updateCafe, deleteCafe } from '@/controllers/cafes'
+import { addNewCafe, updateCafe, deleteCafe } from '../../controllers/cafes'
 
 const CafeRouter = express.Router()
 
